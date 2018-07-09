@@ -1,0 +1,15 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sat Jun 17 10:51:46 2017
+Invocation: foremost 
+Output directory: /root/workspace/ctfs/2017/googlectf/reversing/moon/_moon.exe.extracted/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: stdin
+Start: Sat Jun 17 10:51:46 2017
+Length: Unknown
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+Interrupt received at Sat Jun 17 10:51:50 2017

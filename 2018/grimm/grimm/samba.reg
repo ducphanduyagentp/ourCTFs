@@ -1,0 +1,18 @@
+Windows Registry Editor Version 5.00
+
+[HKCU]
+
+[HKCU\Software]
+
+[HKCU\Software\Policies]
+
+[HKCU\Software\Microsoft]
+
+[HKCU\Software\Microsoft\Windows]
+
+[HKCU\Software\Microsoft\Windows\CurrentVersion]
+
+[HKCU\Software\Microsoft\Windows\CurrentVersion\Policies]
+;Local Variables:
+;coding: UTF-8
+;End:

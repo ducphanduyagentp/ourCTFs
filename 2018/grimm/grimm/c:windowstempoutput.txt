@@ -1,0 +1,2 @@
+ProxyChains-3.1 (http://proxychains.sf.net)
+[wmi/wmis.c:170:main()] ERROR: WBEM_ConnectServer.

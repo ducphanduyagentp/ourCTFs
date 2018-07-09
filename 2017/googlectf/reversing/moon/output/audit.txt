@@ -1,0 +1,24 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sat Jun 17 10:51:57 2017
+Invocation: foremost moon.exe 
+Output directory: /root/workspace/ctfs/2017/googlectf/reversing/moon/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: moon.exe
+Start: Sat Jun 17 10:51:57 2017
+Length: 803 KB (822784 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00001223.png 	       7 KB 	     626670 	  (256 x 256)
+1:	00001238.png 	       2 KB 	     633914 	  (128 x 192)
+Finish: Sat Jun 17 10:51:57 2017
+
+2 FILES EXTRACTED
+	
+png:= 2
+------------------------------------------------------------------
+
+Foremost finished at Sat Jun 17 10:51:57 2017

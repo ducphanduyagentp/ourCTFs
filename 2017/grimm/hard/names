@@ -1,0 +1,20 @@
+summer@summer:/etc$ dig axfr @jan.c137.hax c137.hax
+
+; <<>> DiG 9.10.3-P4-Ubuntu <<>> axfr @jan.c137.hax c137.hax
+; (1 server found)
+;; global options: +cmd
+c137.hax.		86400	IN	SOA	jan.c137.hax. root.c137.hax. 1 604800 86400 241900 86400
+c137.hax.		86400	IN	NS	jan.c137.hax.
+flag.c137.hax.		86400	IN	TXT	"GRIMM-DNS-ZONE"
+jan.c137.hax.		86400	IN	A	10.123.0.27
+jerry.c137.hax.		86400	IN	A	10.123.0.11
+morty.c137.hax.		86400	IN	A	10.123.0.10
+rick.c137.hax.		86400	IN	A	10.123.0.44
+summer.c137.hax.	86400	IN	A	10.123.0.26
+c137.hax.		86400	IN	SOA	jan.c137.hax. root.c137.hax. 1 604800 86400 241900 86400
+;; Query time: 0 msec
+;; SERVER: 10.123.0.27#53(10.123.0.27)
+;; WHEN: Sat Oct 14 23:52:51 UTC 2017
+;; XFR size: 9 records (messages 1, bytes 268)
+
+

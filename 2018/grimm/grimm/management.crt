@@ -1,0 +1,95 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, ST=VA, L=Arlington, O=HAXCORP, OU=MyOrganizationalUnit, CN=HAXCORP CA/name=EasyRSA/emailAddress=jaime@hax.corp
+        Validity
+            Not Before: Mar 27 18:23:44 2018 GMT
+            Not After : Mar 24 18:23:44 2028 GMT
+        Subject: C=US, ST=VA, L=Arlington, O=HAXCORP, OU=MyOrganizationalUnit, CN=management/name=EasyRSA/emailAddress=jaime@hax.corp
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:f3:e7:8b:aa:02:c0:06:fe:71:f9:d6:63:ff:88:
+                    5c:0e:88:c0:ab:6c:07:6c:be:a8:e9:0c:0e:90:4a:
+                    f7:55:9f:dd:35:c5:b6:e0:5d:4f:e1:fe:9a:39:14:
+                    54:35:a3:8b:db:19:c0:a7:83:d3:ef:36:02:c0:bd:
+                    98:23:cd:e9:64:79:05:20:b8:79:9b:e6:44:84:1b:
+                    c4:97:77:73:c5:43:ee:a6:96:b9:44:23:31:52:08:
+                    0a:e0:d9:89:11:ae:f7:8f:b1:c9:da:01:bf:e8:33:
+                    5e:ae:b8:dc:08:52:86:50:98:7f:7f:3f:bd:c3:4f:
+                    89:0b:e2:12:32:c8:06:68:de:d6:a1:71:49:46:25:
+                    0b:48:2f:4f:f9:a0:95:9c:4f:73:0f:c6:fc:53:ec:
+                    bd:4e:59:ee:a3:b3:1e:c3:8c:69:9e:4b:b9:9c:8e:
+                    11:e3:85:b6:4e:f1:4e:89:6b:56:da:e2:28:4b:f9:
+                    36:ef:9f:c9:cb:6d:98:8e:d9:78:7f:f5:a7:29:33:
+                    08:e5:7c:b7:91:7b:54:38:1f:27:d2:b4:24:92:46:
+                    63:1a:8b:19:78:fe:49:8f:dd:ac:83:c4:ed:11:10:
+                    53:e7:98:d0:a6:bb:1c:c0:15:25:1a:27:a3:3a:b9:
+                    a3:91:33:27:1c:67:07:d1:24:88:e3:78:71:84:79:
+                    da:b7
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                Easy-RSA Generated Certificate
+            X509v3 Subject Key Identifier: 
+                2B:6C:D5:71:E9:2F:1D:1F:CF:33:57:53:A0:F2:87:15:EC:DD:D7:49
+            X509v3 Authority Key Identifier: 
+                keyid:46:95:FD:33:FB:C1:4A:03:65:63:8A:D5:F6:70:8E:DB:03:75:10:46
+                DirName:/C=US/ST=VA/L=Arlington/O=HAXCORP/OU=MyOrganizationalUnit/CN=HAXCORP CA/name=EasyRSA/emailAddress=jaime@hax.corp
+                serial:D5:78:9A:E5:B3:85:37:F5
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: sha256WithRSAEncryption
+         22:d8:aa:e0:ce:2e:bc:30:2d:09:af:39:6c:9b:f8:e0:c3:3a:
+         2d:5e:31:ad:53:52:8d:af:c2:16:f9:83:02:95:8b:ad:91:b9:
+         9c:06:4e:3a:40:b3:51:a3:d3:30:88:0e:9f:7a:71:e3:d2:71:
+         4e:a8:4c:cf:50:c0:b5:65:b2:f2:8e:de:29:37:1f:31:7f:b6:
+         09:cc:0a:c7:bd:17:22:9e:a9:48:10:31:32:ba:60:c5:14:12:
+         fa:97:d1:49:29:97:ed:ba:4b:53:46:3a:ca:00:51:a0:bf:72:
+         37:d0:34:20:f6:44:ae:d6:32:e2:09:4a:11:d7:b5:ca:b9:f0:
+         20:ff:f2:dc:e8:98:5a:6d:9d:4e:ee:3f:16:49:3b:83:22:85:
+         66:54:69:4d:43:5a:64:5c:62:f3:35:a6:e3:c7:49:49:8c:ec:
+         ed:67:9b:c3:48:2d:da:8f:83:87:ce:0a:75:74:c3:9f:ad:84:
+         f1:f3:bf:7a:f4:c0:4f:f2:1f:41:2e:aa:df:24:37:9d:82:cb:
+         d3:34:00:88:cb:42:b9:18:2e:af:2a:84:f0:5e:b6:da:2c:77:
+         c3:5a:35:95:4d:bf:f2:39:67:5c:9f:c9:4a:40:d4:83:bc:18:
+         7f:10:78:ba:b7:e3:a0:f0:05:e8:d1:e1:9d:0f:71:98:34:09:
+         20:02:40:ca
+-----BEGIN CERTIFICATE-----
+MIIFJTCCBA2gAwIBAgIBAjANBgkqhkiG9w0BAQsFADCBpTELMAkGA1UEBhMCVVMx
+CzAJBgNVBAgTAlZBMRIwEAYDVQQHEwlBcmxpbmd0b24xEDAOBgNVBAoTB0hBWENP
+UlAxHTAbBgNVBAsTFE15T3JnYW5pemF0aW9uYWxVbml0MRMwEQYDVQQDEwpIQVhD
+T1JQIENBMRAwDgYDVQQpEwdFYXN5UlNBMR0wGwYJKoZIhvcNAQkBFg5qYWltZUBo
+YXguY29ycDAeFw0xODAzMjcxODIzNDRaFw0yODAzMjQxODIzNDRaMIGlMQswCQYD
+VQQGEwJVUzELMAkGA1UECBMCVkExEjAQBgNVBAcTCUFybGluZ3RvbjEQMA4GA1UE
+ChMHSEFYQ09SUDEdMBsGA1UECxMUTXlPcmdhbml6YXRpb25hbFVuaXQxEzARBgNV
+BAMTCm1hbmFnZW1lbnQxEDAOBgNVBCkTB0Vhc3lSU0ExHTAbBgkqhkiG9w0BCQEW
+DmphaW1lQGhheC5jb3JwMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA
+8+eLqgLABv5x+dZj/4hcDojAq2wHbL6o6QwOkEr3VZ/dNcW24F1P4f6aORRUNaOL
+2xnAp4PT7zYCwL2YI83pZHkFILh5m+ZEhBvEl3dzxUPuppa5RCMxUggK4NmJEa73
+j7HJ2gG/6DNerrjcCFKGUJh/fz+9w0+JC+ISMsgGaN7WoXFJRiULSC9P+aCVnE9z
+D8b8U+y9Tlnuo7Mew4xpnku5nI4R44W2TvFOiWtW2uIoS/k275/Jy22Yjtl4f/Wn
+KTMI5Xy3kXtUOB8n0rQkkkZjGosZeP5Jj92sg8TtERBT55jQprscwBUlGiejOrmj
+kTMnHGcH0SSI43hxhHnatwIDAQABo4IBXDCCAVgwCQYDVR0TBAIwADAtBglghkgB
+hvhCAQ0EIBYeRWFzeS1SU0EgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1UdDgQW
+BBQrbNVx6S8dH88zV1Og8ocV7N3XSTCB2gYDVR0jBIHSMIHPgBRGlf0z+8FKA2Vj
+itX2cI7bA3UQRqGBq6SBqDCBpTELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAlZBMRIw
+EAYDVQQHEwlBcmxpbmd0b24xEDAOBgNVBAoTB0hBWENPUlAxHTAbBgNVBAsTFE15
+T3JnYW5pemF0aW9uYWxVbml0MRMwEQYDVQQDEwpIQVhDT1JQIENBMRAwDgYDVQQp
+EwdFYXN5UlNBMR0wGwYJKoZIhvcNAQkBFg5qYWltZUBoYXguY29ycIIJANV4muWz
+hTf1MBMGA1UdJQQMMAoGCCsGAQUFBwMCMAsGA1UdDwQEAwIHgDANBgkqhkiG9w0B
+AQsFAAOCAQEAItiq4M4uvDAtCa85bJv44MM6LV4xrVNSja/CFvmDApWLrZG5nAZO
+OkCzUaPTMIgOn3px49JxTqhMz1DAtWWy8o7eKTcfMX+2CcwKx70XIp6pSBAxMrpg
+xRQS+pfRSSmX7bpLU0Y6ygBRoL9yN9A0IPZErtYy4glKEde1yrnwIP/y3OiYWm2d
+Tu4/Fkk7gyKFZlRpTUNaZFxi8zWm48dJSYzs7Webw0gt2o+Dh84KdXTDn62E8fO/
+evTAT/IfQS6q3yQ3nYLL0zQAiMtCuRguryqE8F622ix3w1o1lU2/8jlnXJ/JSkDU
+g7wYfxB4urfjoPAF6NHhnQ9xmDQJIAJAyg==
+-----END CERTIFICATE-----
