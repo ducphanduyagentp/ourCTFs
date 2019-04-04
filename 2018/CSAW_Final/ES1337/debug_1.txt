@@ -1,0 +1,1036 @@
+➜  release ./chrome       
+[26892:26892:0403/222856.698824:ERROR:sandbox_linux.cc(379)] InitializeSandbox() called with multiple threads in process gpu-process.
+[1:8:0403/222856.766721:ERROR:command_buffer_proxy_impl.cc(119)] ContextResult::kTransientFailure: Failed to send GpuChannelMsg_CreateCommandBuffer.
+➜  release ./chrome -no-sandbox                         
+[26995:26995:0403/222903.032423:ERROR:sandbox_linux.cc(379)] InitializeSandbox() called with multiple threads in process gpu-process.
+[27007:27018:0403/222903.132663:ERROR:command_buffer_proxy_impl.cc(119)] ContextResult::kTransientFailure: Failed to send GpuChannelMsg_CreateCommandBuffer.
+[26965:26965:0403/222914.181511:ERROR:input_method_base.cc(146)] Not implemented reached in virtual ui::InputMethodKeyboardController *ui::InputMethodBase::GetInputMethodKeyboardController()Using InputMethodKeyboardControllerStub
+Received signal 11 SEGV_MAPERR 414141414141
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e0e856808 base::internal::CallbackBase::~CallbackBase()
+#4 0x560e0e872896 base::MessageLoop::DoWork()
+#5 0x560e0e874e2a base::MessagePumpDefault::Run()
+#6 0x560e0e88ff15 base::RunLoop::Run()
+#7 0x560e1271a721 content::RendererMain()
+#8 0x560e0e533067 content::RunZygote()
+#9 0x560e0e5341ad content::ContentMainRunnerImpl::Run()
+#10 0x560e0e5679cb service_manager::Main()
+#11 0x560e0e532671 content::ContentMain()
+#12 0x560e0c9211b3 ChromeMain
+#13 0x7f687f24bb97 __libc_start_main
+#14 0x560e0c92102a _start
+  r8: 0000000000000000  r9: 0000000000000000 r10: 00007ffe2a3041d0 r11: 0000000000000001
+ r12: 00007ffe2a304960 r13: 00007ffe2a3048f0 r14: 00007ffe2a304880 r15: 000027991e472b38
+  di: 0000414141414141  si: 0000000000000001  bp: 00007ffe2a304a70  bx: 000027991e407c00
+  dx: 0000000000000120  ax: 0000000000000000  cx: 0000000000000000  sp: 00007ffe2a304868
+  ip: 0000560e0e856808 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000006
+ trp: 000000000000000e msk: 0000000000000000 cr2: 0000414141414141
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 414141414141
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e0e856808 base::internal::CallbackBase::~CallbackBase()
+#4 0x560e0e872896 base::MessageLoop::DoWork()
+#5 0x560e0e874e2a base::MessagePumpDefault::Run()
+#6 0x560e0e88ff15 base::RunLoop::Run()
+#7 0x560e1271a721 content::RendererMain()
+#8 0x560e0e533067 content::RunZygote()
+#9 0x560e0e5341ad content::ContentMainRunnerImpl::Run()
+#10 0x560e0e5679cb service_manager::Main()
+#11 0x560e0e532671 content::ContentMain()
+#12 0x560e0c9211b3 ChromeMain
+#13 0x7f687f24bb97 __libc_start_main
+#14 0x560e0c92102a _start
+  r8: 0000000000000000  r9: 0000000000000001 r10: 0000000000000000 r11: 0000000000660000
+ r12: 00007ffe2a304960 r13: 00007ffe2a3048f0 r14: 00007ffe2a304880 r15: 000027991e472b38
+  di: 0000414141414141  si: 0000000000000001  bp: 00007ffe2a304a70  bx: 000027991e407c00
+  dx: 0000000000000120  ax: 0000000000000000  cx: 0000000000000000  sp: 00007ffe2a304868
+  ip: 0000560e0e856808 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000006
+ trp: 000000000000000e msk: 0000000000000000 cr2: 0000414141414141
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 414141414141
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e0e856808 base::internal::CallbackBase::~CallbackBase()
+#4 0x560e0e872896 base::MessageLoop::DoWork()
+#5 0x560e0e874e2a base::MessagePumpDefault::Run()
+#6 0x560e0e88ff15 base::RunLoop::Run()
+#7 0x560e1271a721 content::RendererMain()
+#8 0x560e0e533067 content::RunZygote()
+#9 0x560e0e5341ad content::ContentMainRunnerImpl::Run()
+#10 0x560e0e5679cb service_manager::Main()
+#11 0x560e0e532671 content::ContentMain()
+#12 0x560e0c9211b3 ChromeMain
+#13 0x7f687f24bb97 __libc_start_main
+#14 0x560e0c92102a _start
+  r8: 0000000000000000  r9: 000027991e3c5c00 r10: 00007ffe2a3041d0 r11: 0000000000000001
+ r12: 00007ffe2a304960 r13: 00007ffe2a3048f0 r14: 00007ffe2a304880 r15: 000027991e472b38
+  di: 0000414141414141  si: 0000000000000001  bp: 00007ffe2a304a70  bx: 000027991e407c00
+  dx: 0000000000000120  ax: 0000000000000000  cx: 0000000000000000  sp: 00007ffe2a304868
+  ip: 0000560e0e856808 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000006
+ trp: 000000000000000e msk: 0000000000000000 cr2: 0000414141414141
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 424141414141
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e0e856808 base::internal::CallbackBase::~CallbackBase()
+#4 0x560e0e872896 base::MessageLoop::DoWork()
+#5 0x560e0e874e2a base::MessagePumpDefault::Run()
+#6 0x560e0e88ff15 base::RunLoop::Run()
+#7 0x560e1271a721 content::RendererMain()
+#8 0x560e0e533067 content::RunZygote()
+#9 0x560e0e5341ad content::ContentMainRunnerImpl::Run()
+#10 0x560e0e5679cb service_manager::Main()
+#11 0x560e0e532671 content::ContentMain()
+#12 0x560e0c9211b3 ChromeMain
+#13 0x7f687f24bb97 __libc_start_main
+#14 0x560e0c92102a _start
+  r8: 0000000000000000  r9: 00000000000048c8 r10: 00007f6870d2c000 r11: 00007f6870d308c8
+ r12: 00007ffe2a304960 r13: 00007ffe2a3048f0 r14: 00007ffe2a304880 r15: 000027991e472b38
+  di: 0000424141414141  si: 0000000000000001  bp: 00007ffe2a304a70  bx: 000027991e407c00
+  dx: 0000000000000120  ax: 0000000000000000  cx: 0000000000000000  sp: 00007ffe2a304868
+  ip: 0000560e0e856808 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000006
+ trp: 000000000000000e msk: 0000000000000000 cr2: 0000424141414141
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+[26965:26965:0403/223758.978064:ERROR:textfield.cc(1767)] Not implemented reached in virtual bool views::Textfield::ShouldDoLearning()
+Received signal 11 SEGV_MAPERR 424141414141
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e0e856808 base::internal::CallbackBase::~CallbackBase()
+#4 0x560e0e872896 base::MessageLoop::DoWork()
+#5 0x560e0e874e2a base::MessagePumpDefault::Run()
+#6 0x560e0e88ff15 base::RunLoop::Run()
+#7 0x560e1271a721 content::RendererMain()
+#8 0x560e0e533067 content::RunZygote()
+#9 0x560e0e5341ad content::ContentMainRunnerImpl::Run()
+#10 0x560e0e5679cb service_manager::Main()
+#11 0x560e0e532671 content::ContentMain()
+#12 0x560e0c9211b3 ChromeMain
+#13 0x7f687f24bb97 __libc_start_main
+#14 0x560e0c92102a _start
+  r8: 0000000000000000  r9: 0000000000000000 r10: 00007ffe2a3041d0 r11: 0000000000000001
+ r12: 00007ffe2a304960 r13: 00007ffe2a3048f0 r14: 00007ffe2a304880 r15: 000027991e472b38
+  di: 0000424141414141  si: 0000000000000001  bp: 00007ffe2a304a70  bx: 000027991e407c00
+  dx: 0000000000000120  ax: 0000000000000000  cx: 0000000000000000  sp: 00007ffe2a304868
+  ip: 0000560e0e856808 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000006
+ trp: 000000000000000e msk: 0000000000000000 cr2: 0000424141414141
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 414141414141
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e0e856808 base::internal::CallbackBase::~CallbackBase()
+#4 0x560e0e872896 base::MessageLoop::DoWork()
+#5 0x560e0e874e2a base::MessagePumpDefault::Run()
+#6 0x560e0e88ff15 base::RunLoop::Run()
+#7 0x560e1271a721 content::RendererMain()
+#8 0x560e0e533067 content::RunZygote()
+#9 0x560e0e5341ad content::ContentMainRunnerImpl::Run()
+#10 0x560e0e5679cb service_manager::Main()
+#11 0x560e0e532671 content::ContentMain()
+#12 0x560e0c9211b3 ChromeMain
+#13 0x7f687f24bb97 __libc_start_main
+#14 0x560e0c92102a _start
+  r8: 0000000000000000  r9: 000027991e72ddc0 r10: 0000000000000001 r11: 0000000000000000
+ r12: 00007ffe2a304960 r13: 00007ffe2a3048f0 r14: 00007ffe2a304880 r15: 000027991e472b38
+  di: 0000414141414141  si: 0000000000000001  bp: 00007ffe2a304a70  bx: 000027991e407c00
+  dx: 0000000000000120  ax: 0000000000000000  cx: 0000000000000000  sp: 00007ffe2a304868
+  ip: 0000560e0e856808 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000006
+ trp: 000000000000000e msk: 0000000000000000 cr2: 0000414141414141
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 00000000000b
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e0e856808 base::internal::CallbackBase::~CallbackBase()
+#4 0x560e0e872896 base::MessageLoop::DoWork()
+#5 0x560e0e874e2a base::MessagePumpDefault::Run()
+#6 0x560e0e88ff15 base::RunLoop::Run()
+#7 0x560e1271a721 content::RendererMain()
+#8 0x560e0e533067 content::RunZygote()
+#9 0x560e0e5341ad content::ContentMainRunnerImpl::Run()
+#10 0x560e0e5679cb service_manager::Main()
+#11 0x560e0e532671 content::ContentMain()
+#12 0x560e0c9211b3 ChromeMain
+#13 0x7f687f24bb97 __libc_start_main
+#14 0x560e0c92102a _start
+  r8: 0000000000000000  r9: 0000000000000002 r10: 0000000000000001 r11: 0000000000000001
+ r12: 00007ffe2a304960 r13: 00007ffe2a3048f0 r14: 00007ffe2a304880 r15: 000027991e472b38
+  di: 000000000000000b  si: 0000000000000001  bp: 00007ffe2a304a70  bx: 000027991e407c00
+  dx: 0000000000000120  ax: 0000000000000000  cx: 0000000000000000  sp: 00007ffe2a304868
+  ip: 0000560e0e856808 efl: 0000000000010202 cgf: 002b000000000033 erf: 0000000000000006
+ trp: 000000000000000e msk: 0000000000000000 cr2: 000000000000000b
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 00000000000b
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e0e856808 base::internal::CallbackBase::~CallbackBase()
+#4 0x560e0e872896 base::MessageLoop::DoWork()
+#5 0x560e0e874e2a base::MessagePumpDefault::Run()
+#6 0x560e0e88ff15 base::RunLoop::Run()
+#7 0x560e1271a721 content::RendererMain()
+#8 0x560e0e533067 content::RunZygote()
+#9 0x560e0e5341ad content::ContentMainRunnerImpl::Run()
+#10 0x560e0e5679cb service_manager::Main()
+#11 0x560e0e532671 content::ContentMain()
+#12 0x560e0c9211b3 ChromeMain
+#13 0x7f687f24bb97 __libc_start_main
+#14 0x560e0c92102a _start
+  r8: 0000000000000000  r9: 000027991e5a6fd0 r10: 0000000000000001 r11: 0000000000000000
+ r12: 00007ffe2a304960 r13: 00007ffe2a3048f0 r14: 00007ffe2a304880 r15: 000027991e472b38
+  di: 000000000000000b  si: 0000000000000001  bp: 00007ffe2a304a70  bx: 000027991e407c00
+  dx: 0000000000000120  ax: 0000000000000000  cx: 0000000000000000  sp: 00007ffe2a304868
+  ip: 0000560e0e856808 efl: 0000000000010202 cgf: 002b000000000033 erf: 0000000000000006
+ trp: 000000000000000e msk: 0000000000000000 cr2: 000000000000000b
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 0bad60601fdc
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e10e3ab19 WTF::ArrayBufferContents::FreeMemory()
+#4 0x560e0deb488d v8::internal::ArrayBufferCollector::FreeingTask::RunInternal()
+#5 0x560e0e873109 base::debug::TaskAnnotator::RunTask()
+#6 0x560e0e8beb36 base::internal::TaskTracker::RunOrSkipTask()
+#7 0x560e0e900cc3 base::internal::TaskTrackerPosix::RunOrSkipTask()
+#8 0x560e0e8be369 base::internal::TaskTracker::RunAndPopNextTask()
+#9 0x560e0e8bb347 base::internal::SchedulerWorker::RunWorker()
+#10 0x560e0e8bb154 base::internal::SchedulerWorker::RunPooledWorker()
+#11 0x560e0e9012fd base::(anonymous namespace)::ThreadFunc()
+#12 0x7f68852856db start_thread
+#13 0x7f687f34b88f clone
+  r8: 000027991e493d28  r9: 0000000000000001 r10: 00007f6874f321c0 r11: 0000000000000001
+ r12: 000027991e58d778 r13: 000027991e493d20 r14: 0000560e1317ecd8 r15: 00000bad607f8731
+  di: 00000bad607f8731  si: 00000bad607f8731  bp: 00007f6874f32370  bx: 00000bad60601fc0
+  dx: 0000000000000123  ax: 00000bad60600000  cx: 0000000000000fc0  sp: 00007f6874f32220
+  ip: 0000560e10e3ab19 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00000bad60601fdc
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 414141414141
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e0e856808 base::internal::CallbackBase::~CallbackBase()
+#4 0x560e0e872896 base::MessageLoop::DoWork()
+#5 0x560e0e874e2a base::MessagePumpDefault::Run()
+#6 0x560e0e88ff15 base::RunLoop::Run()
+#7 0x560e1271a721 content::RendererMain()
+#8 0x560e0e533067 content::RunZygote()
+#9 0x560e0e5341ad content::ContentMainRunnerImpl::Run()
+#10 0x560e0e5679cb service_manager::Main()
+#11 0x560e0e532671 content::ContentMain()
+#12 0x560e0c9211b3 ChromeMain
+#13 0x7f687f24bb97 __libc_start_main
+#14 0x560e0c92102a _start
+  r8: 0000000000000000  r9: 0000000000000001 r10: 0000000000000000 r11: 00000000006f0000
+ r12: 00007ffe2a304960 r13: 00007ffe2a3048f0 r14: 00007ffe2a304880 r15: 000027991e472b38
+  di: 0000414141414141  si: 0000000000000001  bp: 00007ffe2a304a70  bx: 000027991e407c00
+  dx: 0000000000000120  ax: 0000000000000000  cx: 0000000000000000  sp: 00007ffe2a304868
+  ip: 0000560e0e856808 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000006
+ trp: 000000000000000e msk: 0000000000000000 cr2: 0000414141414141
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 119d146019bc
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e10e3ab19 [27490:27500:0403/225501.040221:FATAL:partition_page.cc(117)] Check failed: this->num_allocated_slots != -1. 
+#0 0x560e0e8f32ec <unknown>
+#1 0x560e0e86d9c0 <unknown>
+#2 0x560e0e904e9b <unknown>
+#3 0x560e10e3abd1 <unknown>
+#4 0x560e0df411de <unknown>
+#5 0x560e0df3d376 <unknown>
+#6 0x560e0df3ce6d <unknown>
+#7 0x560e0df3e34b <unknown>
+#8 0x560e0df4104a <unknown>
+#9 0x560e0e873109 <unknown>
+#10 0x560e0e8beb36 <unknown>
+#11 0x560e0e900cc3 <unknown>
+#12 0x560e0e8be369 <unknown>
+#13 0x560e0e8bb347 <unknown>
+#14 0x560e0e8bb154 <unknown>
+#15 0x560e0e9012fd <unknown>
+#16 0x7f68852856db start_thread
+#17 0x7f687f34b88f clone
+
+Received signal 6
+#0 0x560e0e8f32ec �0�
+#4 0x560e0deb488d <unknown>
+#5 0x560e0e873109 base::debug::TaskAnnotator::RunTask()
+#6 0x560e0e8beb36 base::internal::TaskTracker::RunOrSkipTask()
+#7 0x560e0e900cc3 base::internal::TaskTrackerPosix::RunOrSkipTask()
+#8 0x560e0e8be369 base::internal::TaskTracker::RunAndPopNextTask()
+#9 0x560e0e8bb347 base::internal::SchedulerWorker::RunWorker()
+#10 0x560e0e8bb154 base::internal::SchedulerWorker::RunPooledWorker()
+#11 0x560e0e9012fd base::(anonymous namespace)::ThreadFunc()
+#12 0x7f68852856db start_thread
+#13 0x7f687f34b88f clone
+  r8: 000027991e493d28  r9: 0000000000000001 r10: 00007f6874f321c0 r11: 0000000000000001
+<unknown>
+#1 0x560e0e8f2e51  r12: 000027991e48fc30 r13: 000027991e493d20 r14: 0000560e1317ecd8 r15: 0000119d14735391
+  di: 0000119d14735391  si: 0000119d14735391  bp: 00007f6874f32370  bx: 0000119d146019a0
+  dx: 0000000000000123  ax: 0000119d14600000  cx: 00000000000009a0  sp: 00007f6874f32220
+  ip: 0000560e10e3ab19 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 0000119d146019bc
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 2a96fe601ebc
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e10e3ab19 WTF::ArrayBufferContents::FreeMemory()
+#4 0x560e0df411de _ZN2v88internal23LocalArrayBufferTracker4FreeIZNS0_18ArrayBufferTracker8FreeDeadINS0_26MajorNonAtomicMarkingStateEEEvPNS0_4PageEPT_EUlPNS0_13JSArrayBufferEE_EEvS8_
+#5 0x560e0df3d376 v8::internal::Sweeper::RawSweep()
+#6 0x560e0df3ce6d v8::internal::Sweeper::ParallelSweepPage()
+#7 0x560e0df3e34b v8::internal::Sweeper::SweepSpaceFromTask()
+#8 0x560e0df4104a v8::internal::Sweeper::SweeperTask::RunInternal()
+#9 0x560e0e873109 base::debug::TaskAnnotator::RunTask()
+#10 0x560e0e8beb36 base::internal::TaskTracker::RunOrSkipTask()
+#11 0x560e0e900cc3 base::internal::TaskTrackerPosix::RunOrSkipTask()
+#12 0x560e0e8be369 base::internal::TaskTracker::RunAndPopNextTask()
+#13 0x560e0e8bb347 base::internal::SchedulerWorker::RunWorker()
+#14 0x560e0e8bb154 base::internal::SchedulerWorker::RunPooledWorker()
+#15 0x560e0e9012fd base::(anonymous namespace)::ThreadFunc()
+#16 0x7f68852856db start_thread
+#17 0x7f687f34b88f clone
+  r8: 0000000000000001  r9: 000000000000000a r10: 000027991e6db5a0 r11: 000000000000000b
+ r12: 000027991e711a80 r13: 000027991e706940 r14: 0000560e1317ecd8 r15: 00002a96fe7d7e61
+  di: 00002a96fe7d7e61  si: 00002a96fe7d7e61  bp: 00007f6870caa160  bx: 00002a96fe601ea0
+  dx: 0000000000000123  ax: 00002a96fe600000  cx: 0000000000000ea0  sp: 00007f6870caa010
+  ip: 0000560e10e3ab19 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00002a96fe601ebc
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 045f7a8019bc
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e10e3ab19 [27512:27522:0403/225521.232405:FATAL:partition_page.cc(117)] Check failed: this->num_allocated_slots != -1. 
+#0 0x560e0e8f32ec <unknown>
+#1 0x560e0e86d9c0 <unknown>
+#2 0x560e0e904e9b <unknown>
+#3 0x560e10e3abd1 <unknown>
+#4 0x560e0df411de <unknown>
+#5 0x560e0df3d376 <unknown>
+#6 0x560e0df3ce6d <unknown>
+#7 0x560e0df3e34b <unknown>
+#8 0x560e0df4104a <unknown>
+#9 0x560e0e873109 <unknown>
+#10 0x560e0e8beb36 <unknown>
+#11 0x560e0e900cc3 <unknown>
+#12 0x560e0e8be369 <unknown>
+#13 0x560e0e8bb347 <unknown>
+#14 0x560e0e8bb154 <unknown>
+#15 0x560e0e9012fd <unknown>
+#16 0x7f68852856db start_thread
+#17 0x7f687f34b88f clone
+
+Received signal 6
+#0 0x560e0e8f32ec <unknown>
+#1 0x560e0e8f2e51 <unknown>
+#2 0x7f6885290890 <unknown>
+#3 0x7f687f268e97 gsignal
+#4 0x7f687f26a801 abort
+#5 0x560e0e8f1c75 WTF::ArrayBufferContents::FreeMemory()
+#4 0x560e0deb488d erCollector11FreeingTaskD0Ev
+#5 0x560e0e873109 base::debug::TaskAnnotator::RunTask()<unknown>
+#6 0x560e0e86de29 logging::LogMessage::~LogMessage()
+#7 0x560e0e904e9b base::internal::PartitionPage::FreeSlowPath()
+#8 0x560e10e3abd1 
+#6 0x560e0e8beb36 <unknown>
+#9 0x560e0df411de <unknown>
+#10 0x560e0df3d376 <unknown>
+#11 0x560e0df3ce6d <unknown>
+#12 0x560e0df3e34b <unknown>
+#13 0x560e0df4104a <unknown>
+#14 0x560e0e873109 <unknown>
+#15 0x560e0e8beb36 <unknown>
+#16 0x560e0e900cc3 <unknown>
+#17 0x560e0e8be369 <unknown>
+#18 0x560e0e8bb347 <unknown>
+#19 0x560e0e8bb154 <unknown>
+#20 0x560e0e9012fd <unknown>
+#21 0x7f68852856db start_thread
+#22 0x7f687f34b88f clone
+  r8: 0000000000000000  r9: 00007f6870ca9680 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007f6870ca9ea8 r13: 000000000000006d r14: 00007f6870ca9eb0 r15: 00007f6870ca9eb8
+  di: 0000000000000002  si: 00007f6870ca9680  bp: 00007f6870ca98d0  bx: 00007f6870ca9930
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f687f268e97  sp: 00007f6870ca9680
+  ip: 00007f687f268e97 efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 26e89b00199c
+#0 0x560e0e8f32ec [27525:27536:0403/225532.224500:FATAL:partition_page.cc(117)] Check failed: this->num_allocated_slots != -1. 
+#0 0x560e0e8f32ec <unknown>
+#1 0x560e0e86d9c0 <unknown>
+#2 0x560e0e904e9b <unknown>
+#3 0x560e10e3abd1 <unknown>
+#4 0x560e0df411de <unknown>
+#5 0x560e0df3d376 <unknown>
+#6 0x560e0df3ce6d <unknown>
+#7 0x560e0df3e34b <unknown>
+#8 0x560e0df4104a <unknown>
+#9 0x560e0e873109 <unknown>
+#10 0x560e0e8beb36 <unknown>
+#11 0x560e0e900cc3 <unknown>
+#12 0x560e0e8be369 <unknown>
+#13 0x560e0e8bb347 <unknown>
+#14 0x560e0e8bb154 <unknown>
+#15 0x560e0e9012fd <unknown>
+#16 0x7f68852856db start_thread
+#17 0x7f687f34b88f clone
+
+Received signal 6
+#0 0x560e0e8f32ec <unknown>
+#1 0x560e0e8f2e51 <unknown>
+#2 0x7f6885290890 <unknown>
+#3 0x7f687f268e97 gsignal
+#4 0x7f687f26a801 abort
+#5 0x560e0e8f1c75 <unknown>
+#6 0x560e0e86de29 <unknown>
+#7 0x560e0e904e9b <unknown>
+#8 0x560e10e3abd1 <unknown>
+#9 0x560e0df411de <unknown>
+#10 0x560e0df3d376 <unknown>
+#11 0x560e0df3ce6d <unknown>
+#12 0x560e0df3e34b <unknown>
+#13 0x560e0df4104a <unknown>
+#14 0x560e0e873109 <unknown>
+#15 0x560e0e8beb36 <unknown>
+#16 0x560e0e900cc3 <unknown>
+#17 0x560e0e8be369 <unknown>
+#18 0x560e0e8bb347 <unknown>
+#19 0x560e0e8bb154 <unknown>
+#20 0x560e0e9012fd <unknown>
+#21 0x7f68852856db start_thread
+#22 0x7f687f34b88f clone
+  r8: 0000000000000000  r9: 00007f6870ca9680 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007f6870ca9ea8 r13: 000000000000006d r14: 00007f6870ca9eb0 r15: 00007f6870ca9eb8
+  di: 0000000000000002  si: 00007f6870ca9680  bp: 00007f6870ca98d0  bx: 00007f6870ca9930
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f687f268e97  sp: 00007f6870ca9680
+  ip: 00007f687f268e97 efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 385391a01abc
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e10e3ab19 WTF::ArrayBufferContents::FreeMemory()
+#4 0x560e0df411de _ZN2v88internal23LocalArrayBufferTracker4FreeIZNS0_18ArrayBufferTracker8FreeDeadINS0_26MajorNonAtomicMarkingStateEEEvPNS0_4PageEPT_EUlPNS0_13JSArrayBufferEE_EEvS8_
+#5 0x560e0df3d376 v8::internal::Sweeper::RawSweep()
+#6 0x560e0df3ce6d v8::internal::Sweeper::ParallelSweepPage()
+#7 0x560e0df3e34b v8::internal::Sweeper::SweepSpaceFromTask()
+#8 0x560e0df410aa v8::internal::Sweeper::SweeperTask::RunInternal()
+#9 0x560e0e873109 base::debug::TaskAnnotator::RunTask()
+#10 0x560e0e8beb36 base::internal::TaskTracker::RunOrSkipTask()
+#11 0x560e0e900cc3 base::internal::TaskTrackerPosix::RunOrSkipTask()
+#12 0x560e0e8be369 base::internal::TaskTracker::RunAndPopNextTask()
+#13 0x560e0e8bb347 base::internal::SchedulerWorker::RunWorker()
+#14 0x560e0e8bb154 base::internal::SchedulerWorker::RunPooledWorker()
+#15 0x560e0e9012fd base::(anonymous namespace)::ThreadFunc()
+#16 0x7f68852856db start_thread
+#17 0x7f687f34b88f clone
+  r8: 0000000000000000  r9: 0000000000000004 r10: 000027991e723b10 r11: 0000000000000005
+ r12: 000027991e723a80 r13: 000027991e70f840 r14: 0000560e1317ecd8 r15: 0000385391b57ea1
+  di: 0000385391b57ea1  si: 0000385391b57ea1  bp: 00007f6870caa160  bx: 0000385391a01aa0
+  dx: 0000000000000123  ax: 0000385391a00000  cx: 0000000000000aa0  sp: 00007f6870caa010
+  ip: 0000560e10e3ab19 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 0000385391a01abc
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 206602e0161c
+#0 0x560e0e8f32ec Received signal 11 SEGV_MAPERR 04c479e017dc
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e10e3ab19 WTF::ArrayBufferContents::FreeMemory()
+#4 0x560e0df411de _ZN2v88internal23LocalArrayBufferTracker4FreeIZNS0_18ArrayBufferTracker8FreeDeadINS0_26MajorNonAtomicMarkingStateEEEvPNS0_4PageEPT_EUlPNS0_13JSArrayBufferEE_EEvS8_
+#5 0x560e0df3d376 v8::internal::Sweeper::RawSweep()
+#6 0x560e0df3ce6d v8::internal::Sweeper::ParallelSweepPage()
+#7 0x560e0df3e34b v8::internal::Sweeper::SweepSpaceFromTask()
+#8 0x560e0df4104a v8::internal::Sweeper::SweeperTask::RunInternal()
+#9 0x560e0e873109 base::debug::TaskAnnotator::RunTask()
+#10 0x560e0e8beb36 base::internal::TaskTracker::RunOrSkipTask()
+#11 0x560e0e900cc3 base::internal::TaskTrackerPosix::RunOrSkipTask()
+#12 0x560e0e8be369 base::internal::TaskTracker::RunAndPopNextTask()
+#13 0x560e0e8bb347 base::internal::SchedulerWorker::RunWorker()
+#14 0x560e0e8bb154 base::internal::SchedulerWorker::RunPooledWorker()
+#15 0x560e0e9012fd base::(anonymous namespace)::ThreadFunc()
+#16 0x7f68852856db start_thread
+#17 0x7f687f34b88f clone
+  r8: 0000000000000005  r9: 000000000000000a r10: 000027991e4e4d80 r11: 000000000000000b
+ r12: 000027991e631450 r13: 000027991e6fc480 r14: 0000560e1317ecd8 r15: 000004c479ef85f1
+  di: 000004c479ef85f1  si: 000004c479ef85f1  bp: 00007f6874f32160  bx: 000004c479e017c0
+  dx: 0000000000000123  ax: 000004c479e00000  cx: 00000000000007c0  sp: 00007f6874f32010
+  ip: 0000560e10e3ab19 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 000004c479e017dc
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 10b756401fdc
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e10e3ab19 WTF::ArrayBufferContents::FreeMemory()
+#4 0x560e0df411de _ZN2v88internal23LocalArrayBufferTracker4FreeIZNS0_18ArrayBufferTracker8FreeDeadINS0_26MajorNonAtomicMarkingStateEEEvPNS0_4PageEPT_EUlPNS0_13JSArrayBufferEE_EEvS8_
+#5 0x560e0df3d376 v8::internal::Sweeper::RawSweep()
+#6 0x560e0df3ce6d v8::internal::Sweeper::ParallelSweepPage()
+#7 0x560e0df3e34b v8::internal::Sweeper::SweepSpaceFromTask()
+#8 0x560e0df4104a v8::internal::Sweeper::SweeperTask::RunInternal()
+#9 0x560e0e873109 base::debug::TaskAnnotator::RunTask()
+#10 0x560e0e8beb36 base::internal::TaskTracker::RunOrSkipTask()
+#11 0x560e0e900cc3 base::internal::TaskTrackerPosix::RunOrSkipTask()
+#12 0x560e0e8be369 base::internal::TaskTracker::RunAndPopNextTask()
+#13 0x560e0e8bb347 base::internal::SchedulerWorker::RunWorker()
+#14 0x560e0e8bb154 base::internal::SchedulerWorker::RunPooledWorker()
+#15 0x560e0e9012fd base::(anonymous namespace)::ThreadFunc()
+#16 0x7f68852856db start_thread
+#17 0x7f687f34b88f clone
+  r8: 0000000000000008  r9: 000000000000000a r10: 000027991e4b9e40 r11: 000000000000000b
+ r12: 000027991e6e85a0 r13: 000027991e71b800 r14: 0000560e1317ecd8 r15: 000010b7565f8641
+  di: 000010b7565f8641  si: 000010b7565f8641  bp: 00007f6874f32160  bx: 000010b756401fc0
+  dx: 0000000000000123  ax: 000010b756400000  cx: 0000000000000fc0  sp: 00007f6874f32010
+  ip: 0000560e10e3ab19 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 000010b756401fdc
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+[27598:27600:0403/230057.126114:FATAL:partition_page.cc(117)] Check failed: this->num_allocated_slots != -1. 
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e86d9c0 logging::LogMessage::~LogMessage()
+#2 0x560e0e904e9b base::internal::PartitionPage::FreeSlowPath()
+#3 0x560e10e3abd1 WTF::ArrayBufferContents::FreeMemory()
+#4 0x560e0df411de _ZN2v88internal23LocalArrayBufferTracker4FreeIZNS0_18ArrayBufferTracker8FreeDeadINS0_26MajorNonAtomicMarkingStateEEEvPNS0_4PageEPT_EUlPNS0_13JSArrayBufferEE_EEvS8_
+#5 0x560e0df3d376 v8::internal::Sweeper::RawSweep()
+#6 0x560e0df3ce6d v8::internal::Sweeper::ParallelSweepPage()
+#7 0x560e0df3e34b v8::internal::Sweeper::SweepSpaceFromTask()
+#8 0x560e0df4104a v8::internal::Sweeper::SweeperTask::RunInternal()
+#9 0x560e0e873109 base::debug::TaskAnnotator::RunTask()
+#10 0x560e0e8beb36 base::internal::TaskTracker::RunOrSkipTask()
+#11 0x560e0e900cc3 base::internal::TaskTrackerPosix::RunOrSkipTask()
+#12 0x560e0e8be369 base::internal::TaskTracker::RunAndPopNextTask()
+#13 0x560e0e8bb347 base::internal::SchedulerWorker::RunWorker()
+#14 0x560e0e8bb154 base::internal::SchedulerWorker::RunPooledWorker()
+#15 0x560e0e9012fd base::(anonymous namespace)::ThreadFunc()
+#16 0x7f68852856db start_thread
+#17 0x7f687f34b88f clone
+
+Received signal 6
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x7f687f268e97 gsignal
+#4 0x7f687f26a801 abort
+#5 0x560e0e8f1c75 base::debug::BreakDebugger()
+#6 0x560e0e86de29 logging::LogMessage::~LogMessage()
+#7 0x560e0e904e9b base::internal::PartitionPage::FreeSlowPath()
+#8 0x560e10e3abd1 WTF::ArrayBufferContents::FreeMemory()
+#9 0x560e0df411de _ZN2v88internal23LocalArrayBufferTracker4FreeIZNS0_18ArrayBufferTracker8FreeDeadINS0_26MajorNonAtomicMarkingStateEEEvPNS0_4PageEPT_EUlPNS0_13JSArrayBufferEE_EEvS8_
+#10 0x560e0df3d376 v8::internal::Sweeper::RawSweep()
+#11 0x560e0df3ce6d v8::internal::Sweeper::ParallelSweepPage()
+#12 0x560e0df3e34b v8::internal::Sweeper::SweepSpaceFromTask()
+#13 0x560e0df4104a v8::internal::Sweeper::SweeperTask::RunInternal()
+#14 0x560e0e873109 base::debug::TaskAnnotator::RunTask()
+#15 0x560e0e8beb36 base::internal::TaskTracker::RunOrSkipTask()
+#16 0x560e0e900cc3 base::internal::TaskTrackerPosix::RunOrSkipTask()
+#17 0x560e0e8be369 base::internal::TaskTracker::RunAndPopNextTask()
+#18 0x560e0e8bb347 base::internal::SchedulerWorker::RunWorker()
+#19 0x560e0e8bb154 base::internal::SchedulerWorker::RunPooledWorker()
+#20 0x560e0e9012fd base::(anonymous namespace)::ThreadFunc()
+#21 0x7f68852856db start_thread
+#22 0x7f687f34b88f clone
+  r8: 0000000000000000  r9: 00007f6874f31680 r10: 0000000000000008 r11: 0000000000000246
+ r12: 00007f6874f31ea8 r13: 000000000000006d r14: 00007f6874f31eb0 r15: 00007f6874f31eb8
+  di: 0000000000000002  si: 00007f6874f31680  bp: 00007f6874f318d0  bx: 00007f6874f31930
+  dx: 0000000000000000  ax: 0000000000000000  cx: 00007f687f268e97  sp: 00007f6874f31680
+  ip: 00007f687f268e97 efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000
+ trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+^R
+Error installing extension 'extensions::SafeBuiltins'.
+[27667:27667:0403/230432.193892:FATAL:v8_initializer.cc(87)] 
+Received signal 11 SEGV_MAPERR 38b503c016bc
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e10e3ab19 WTF::ArrayBufferContents::FreeMemory()
+#4 0x560e0df411de _ZN2v88internal23LocalArrayBufferTracker4FreeIZNS0_18ArrayBufferTracker8FreeDeadINS0_26MajorNonAtomicMarkingStateEEEvPNS0_4PageEPT_EUlPNS0_13JSArrayBufferEE_EEvS8_
+#5 0x560e0df3d376 v8::internal::Sweeper::RawSweep()
+#6 0x560e0df3ce6d v8::internal::Sweeper::ParallelSweepPage()
+#7 0x560e0df3e34b v8::internal::Sweeper::SweepSpaceFromTask()
+#8 0x560e0df4104a v8::internal::Sweeper::SweeperTask::RunInternal()
+#9 0x560e0e873109 base::debug::TaskAnnotator::RunTask()
+#10 0x560e0e8beb36 base::internal::TaskTracker::RunOrSkipTask()
+#11 0x560e0e900cc3 base::internal::TaskTrackerPosix::RunOrSkipTask()
+#12 0x560e0e8be369 base::internal::TaskTracker::RunAndPopNextTask()
+#13 0x560e0e8bb347 base::internal::SchedulerWorker::RunWorker()
+#14 0x560e0e8bb154 base::internal::SchedulerWorker::RunPooledWorker()
+#15 0x560e0e9012fd base::(anonymous namespace)::ThreadFunc()
+#16 0x7f68852856db start_thread
+#17 0x7f687f34b88f clone
+  r8: 0000000000000003  r9: 0000000000000004 r10: 000027991e70a930 r11: 0000000000000005
+ r12: 000027991e6e1300 r13: 000027991e487bc0 r14: 0000560e1317ecd8 r15: 000038b503cd7c89
+  di: 000038b503cd7c89  si: 000038b503cd7c89  bp: 00007f6874f32160  bx: 000038b503c016a0
+  dx: 0000000000000123  ax: 000038b503c00000  cx: 00000000000006a0  sp: 00007f6874f32010
+  ip: 0000560e10e3ab19 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 000038b503c016bc
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x157a02788564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e4ca0c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 00002deeaf7825b1  cx: 0000157a02788558  sp: 00007ffe2a3023d8
+  ip: 0000157a02788564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x311b12e88564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e4d10c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 0000237ccb4825b1  cx: 0000311b12e88558  sp: 00007ffe2a3023d8
+  ip: 0000311b12e88564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x1e5fafd88564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e4a50c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 0000247e011825b1  cx: 00001e5fafd88558  sp: 00007ffe2a3023d8
+  ip: 00001e5fafd88564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x25b0e8e08564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e4ce0c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 000017ceb07825b1  cx: 000025b0e8e08558  sp: 00007ffe2a3023d8
+  ip: 000025b0e8e08564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x35c6d5208564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e4a70c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 0000184e050025b1  cx: 000035c6d5208558  sp: 00007ffe2a3023d8
+  ip: 000035c6d5208564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x389639008564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e4d10c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 000022dded4025b1  cx: 0000389639008558  sp: 00007ffe2a3023d8
+  ip: 0000389639008564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 414141414168
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x33aeff6048ff <unknown>
+  r8: 00007ffe2a302410  r9: 0000000000000095 r10: 00007ffe2a302380 r11: 0000000000000013
+ r12: ffffffffffffffff r13: 000027991e4970c8 r14: 00000846ba1b06a1 r15: 000027991e4b4410
+  di: 00007ffe2a302410  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000414141414141
+  dx: 0000000000000008  ax: 00007ffe2a302420  cx: 000033aeff6048e0  sp: 00007ffe2a3023d0
+  ip: 000033aeff6048ff efl: 0000000000010246 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 0000414141414168
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x3ed887b08564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e49d0c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 00001875eb9025b1  cx: 00003ed887b08558  sp: 00007ffe2a3023d8
+  ip: 00003ed887b08564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x19f2eda08564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e4aa0c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 00001ce0093025b1  cx: 000019f2eda08558  sp: 00007ffe2a3023d8
+  ip: 000019f2eda08564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x33777b908564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e49d0c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 00001efe9bb025b1  cx: 000033777b908558  sp: 00007ffe2a3023d8
+  ip: 000033777b908564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x1ae1a8788564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e4a10c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 00003af51de825b1  cx: 00001ae1a8788558  sp: 00007ffe2a3023d8
+  ip: 00001ae1a8788564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 0a3f8ca01f3c
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e10e3ab19 WTF::ArrayBufferContents::FreeMemory()
+#4 0x560e0deb488d v8::internal::ArrayBufferCollector::FreeingTask::RunInternal()
+#5 0x560e0e873109 base::debug::TaskAnnotator::RunTask()
+#6 0x560e0e8beb36 base::internal::TaskTracker::RunOrSkipTask()
+#7 0x560e0e900cc3 base::internal::TaskTrackerPosix::RunOrSkipTask()
+#8 0x560e0e8be369 base::internal::TaskTracker::RunAndPopNextTask()
+#9 0x560e0e8bb347 base::internal::SchedulerWorker::RunWorker()
+#10 0x560e0e8bb154 base::internal::SchedulerWorker::RunPooledWorker()
+#11 0x560e0e9012fd base::(anonymous namespace)::ThreadFunc()
+#12 0x7f68852856db start_thread
+#13 0x7f687f34b88f clone
+  r8: 000027991e493d78  r9: 0000000000000001 r10: 00007f6870caa1c0 r11: 0000000000000001
+ r12: 000027991e4e1fc0 r13: 000027991e493d70 r14: 0000560e1317ecd8 r15: 00000a3f8cbe78e9
+  di: 00000a3f8cbe78e9  si: 00000a3f8cbe78e9  bp: 00007f6870caa370  bx: 00000a3f8ca01f20
+  dx: 0000000000000123  ax: 00000a3f8ca00000  cx: 0000000000000f20  sp: 00007f6870caa220
+  ip: 0000560e10e3ab19 efl: 0000000000010202 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00000a3f8ca01f3c
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 03b787700000
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x15aced80c31c <unknown>
+  r8: 00007ffe2a302400  r9: 000000000002d8ef r10: 000027991e4d71d8 r11: 0000000000000000
+ r12: ffffffffffffffff r13: 000027991e4d00c8 r14: 000003b7876d2711 r15: 000027991e52c410
+  di: 000027991e4d0020  si: 000003b7876beb91  bp: 00007ffe2a302420  bx: ffffffffffffffff
+  dx: 0000000000000001  ax: 00001582065025b1  cx: 000015aced80c300  sp: 00007ffe2a3023d0
+  ip: 000015aced80c31c efl: 0000000000010202 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 000003b787700000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x0f8857808564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e4ac0c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 0000089121f025b1  cx: 00000f8857808558  sp: 00007ffe2a3023d8
+  ip: 00000f8857808564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x25d886b88564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e49f0c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 00000ce9f6e025b1  cx: 000025d886b88558  sp: 00007ffe2a3023d8
+  ip: 000025d886b88564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x0a7fc1988564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e4cf0c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 00000ffc530825b1  cx: 00000a7fc1988558  sp: 00007ffe2a3023d8
+  ip: 00000a7fc1988564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x0eb93b108564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e4d00c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 00002145d75025b1  cx: 00000eb93b108558  sp: 00007ffe2a3023d8
+  ip: 00000eb93b108564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x187ddbf88564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e4a30c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 0000020506d825b1  cx: 0000187ddbf88558  sp: 00007ffe2a3023d8
+  ip: 0000187ddbf88564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x31f549f88564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e49c0c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 00000f1d24e825b1  cx: 000031f549f88558  sp: 00007ffe2a3023d8
+  ip: 000031f549f88564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x18557e088564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e4cd0c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 000021c9445025b1  cx: 000018557e088558  sp: 00007ffe2a3023d8
+  ip: 000018557e088564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x0da2ef108564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e4970c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 000021a7eeb825b1  cx: 00000da2ef108558  sp: 00007ffe2a3023d8
+  ip: 00000da2ef108564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+[28625:28658:0404/000423.766417:FATAL:partition_page.cc(117)] Check failed: this->num_allocated_slots != -1. 
+Error installing extension 'extensions::SafeBuiltins'.
+[28670:28670:0404/000515.955254:FATAL:v8_initializer.cc(87)] 
+Error installing extension 'extensions::SafeBuiltins'.
+[28707:28707:0404/000556.753930:FATAL:v8_initializer.cc(87)] 
+Error installing extension 'extensions::SafeBuiltins'.
+[28729:28729:0404/000651.887218:FATAL:v8_initializer.cc(87)] 
+Received signal 11 SEGV_MAPERR 4141414141d1
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x3a3468808564 <unknown>
+  r8: 00007ffe2a302408  r9: 0000000000000090 r10: 00007ffe2a302380 r11: 000000000000000b
+ r12: 000000000000000b r13: 000027991e4ca0c8 r14: 0000414141414141 r15: 0000000000000000
+  di: 00007ffe2a302408  si: 0000414141414141  bp: 00007ffe2a302420  bx: 0000000000000002
+  dx: 0000000000000008  ax: 000034d7858025b1  cx: 00003a3468808558  sp: 00007ffe2a3023d8
+  ip: 00003a3468808564 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00004141414141d1
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 104f9f680000
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x28cf6d20c31c <unknown>
+  r8: 00007ffe2a302400  r9: 000000000002d90f r10: 000027991e4d51d8 r11: 0000000000000000
+ r12: ffffffffffffffff r13: 000027991e4ce0c8 r14: 0000104f9f6526f1 r15: 000027991e52d410
+  di: 000027991e4ce020  si: 0000104f9f63eb91  bp: 00007ffe2a302420  bx: ffffffffffffffff
+  dx: 0000000000000001  ax: 000026c6839825b1  cx: 000028cf6d20c300  sp: 00007ffe2a3023d0
+  ip: 000028cf6d20c31c efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 0000104f9f680000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 3c3526000000
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x3c02ed80c31c <unknown>
+  r8: 00007ffe2a302400  r9: 000000000002d8ef r10: 000027991e4d91d8 r11: 0000000000000000
+ r12: ffffffffffffffff r13: 000027991e4d20c8 r14: 00003c3525fd2711 r15: 000027991e530410
+  di: 000027991e4d2020  si: 00003c3525fbeb91  bp: 00007ffe2a302420  bx: ffffffffffffffff
+  dx: 0000000000000001  ax: 00001104c77825b1  cx: 00003c02ed80c300  sp: 00007ffe2a3023d0
+  ip: 00003c02ed80c31c efl: 0000000000010202 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00003c3526000000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 2bf96a880000
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x102a6670c31c <unknown>
+  r8: 00007ffe2a302400  r9: 000000000002d8cf r10: 000027991e4d71d8 r11: 0000000000000000
+ r12: ffffffffffffffff r13: 000027991e4d00c8 r14: 00002bf96a852731 r15: 000027991e52c410
+  di: 000027991e4d0020  si: 00002bf96a83eb91  bp: 00007ffe2a302420  bx: ffffffffffffffff
+  dx: 0000000000000001  ax: 00002f333d0025b1  cx: 0000102a6670c300  sp: 00007ffe2a3023d0
+  ip: 0000102a6670c31c efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00002bf96a880000
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 0700fe4017dc
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e10e3ab19 WTF::ArrayBufferContents::FreeMemory()
+#4 0x560e0df411de _ZN2v88internal23LocalArrayBufferTracker4FreeIZNS0_18ArrayBufferTracker8FreeDeadINS0_26MajorNonAtomicMarkingStateEEEvPNS0_4PageEPT_EUlPNS0_13JSArrayBufferEE_EEvS8_
+#5 0x560e0df3d376 v8::internal::Sweeper::RawSweep()
+#6 0x560e0df3ce6d v8::internal::Sweeper::ParallelSweepPage()
+#7 0x560e0df3e34b v8::internal::Sweeper::SweepSpaceFromTask()
+#8 0x560e0df4104a v8::internal::Sweeper::SweeperTask::RunInternal()
+#9 0x560e0e873109 base::debug::TaskAnnotator::RunTask()
+#10 0x560e0e8beb36 base::internal::TaskTracker::RunOrSkipTask()
+#11 0x560e0e900cc3 base::internal::TaskTrackerPosix::RunOrSkipTask()
+#12 0x560e0e8be369 base::internal::TaskTracker::RunAndPopNextTask()
+#13 0x560e0e8bb347 base::internal::SchedulerWorker::RunWorker()
+#14 0x560e0e8bb154 base::internal::SchedulerWorker::RunPooledWorker()
+#15 0x560e0e9012fd base::(anonymous namespace)::ThreadFunc()
+#16 0x7f68852856db start_thread
+#17 0x7f687f34b88f clone
+  r8: 000027991e719db0  r9: 00000000ffffffff r10: 0000000000000000 r11: 0000000000000000
+ r12: 000027991e5befc0 r13: 000027991e719db0 r14: 0000560e1317ecd8 r15: 00000700fe4f8761
+  di: 00000700fe4f8761  si: 00000700fe4f8761  bp: 00007f6874f32160  bx: 00000700fe4017c0
+  dx: 0000000000000123  ax: 00000700fe400000  cx: 00000000000007c0  sp: 00007f6874f32010
+  ip: 0000560e10e3ab19 efl: 0000000000010206 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 00000700fe4017dc
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 160db5a015fc
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x560e10e3ab19 [29328:29338:0404/001046.620813:FATAL:partition_page.cc(117)] Check failed: this->num_allocated_slots != -1. 
+#0 0x560e0e8f32ec <unknown>
+#1 0x560e0e86d9c0 <unknown>
+#2 0x560e0e904e9b <unknown>
+#3 0x560e10e3abd1 <unknown>
+#4 0x560e0df411de <unknown>
+#5 0x560e0df3d376 <unknown>
+#6 0x560e0df3ce6d <unknown>
+#7 0x560e0df3e34b <unknown>
+#8 0x560e0df4104a <unknown>
+#9 0x560e0e873109 <unknown>
+#10 0x560e0e8beb36 <unknown>
+#11 0x560e0e900cc3 <unknown>
+#12 0x560e0e8be369 <unknown>
+#13 0x560e0e8bb347 <unknown>
+#14 0x560e0e8bb154 <unknown>
+#15 0x560e0e9012fd <unknown>
+#16 0x7f68852856db start_thread
+#17 0x7f687f34b88f clone
+
+Received signal 6
+#0 0x560e0e8f32ec base::debug::StackTrace::StackTrace()
+#1 0x560e0e8f2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f6885290890 <unknown>
+#3 0x7f687f268e97 gsignal
+#4 0x7f687f26a801WTF::ArrayBufferContents::FreeMemory()
+#4 0x560e0deb488d  abort
+#5 0x560e0e8f1c75 v8::internal::ArrayBufferCollector::FreeingTask::RunInternal()
+#5 0x560e0e873109 <unknown>
+#6 0x560e0e86de29 <unknown>
+#6 0x560e0e8beb36 base::internal::TaskTracker::RunOrSkipTask()
+#7 0x560e0e900cc3 base::internal::TaskTrackerPosix::RunOrSkipTask()
+#8 0x560e0e8be369 <unknown>
+#9 0x560e0e8bb347 
+
+
+Received signal 11 SEGV_MAPERR 414141414141
+Received signal 11 SEGV_MAPERR 414141414141
+^C%                                                                                                                                                                                                                ➜  release ./chrome -no-sandbox 
+[29412:29412:0404/001140.068033:ERROR:sandbox_linux.cc(379)] InitializeSandbox() called with multiple threads in process gpu-process.
+[29425:29436:0404/001140.138633:ERROR:command_buffer_proxy_impl.cc(119)] ContextResult::kTransientFailure: Failed to send GpuChannelMsg_CreateCommandBuffer.
+[29383:29383:0404/001144.741793:ERROR:input_method_base.cc(146)] Not implemented reached in virtual ui::InputMethodKeyboardController *ui::InputMethodBase::GetInputMethodKeyboardController()Using InputMethodKeyboardControllerStub
+[29383:29383:0404/001145.649417:ERROR:textfield.cc(1767)] Not implemented reached in virtual bool views::Textfield::ShouldDoLearning()
+Received signal 11 SEGV_MAPERR 414141414141
+Received signal 11 SEGV_MAPERR 414141414141
+[29561:29585:0404/001548.664780:FATAL:partition_page.cc(117)] Check failed: this->num_allocated_slots != -1. 
+Received signal 11 SEGV_MAPERR 414141414141
+Received signal 11 SEGV_MAPERR 414141414141
+Received signal 11 SEGV_MAPERR 000000200406
+#0 0x55bba92d32ec base::debug::StackTrace::StackTrace()
+#1 0x55bba92d2e51 base::debug::(anonymous namespace)::StackDumpSignalHandler()
+#2 0x7f3848b12890 <unknown>
+#3 0x55bba89988d4 v8::internal::LookupIterator::LookupInRegularHolder<>()
+#4 0x55bba8995f56 v8::internal::LookupIterator::Start<>()
+#5 0x55bba89b290c v8::internal::Object::GetLengthFromArrayLike()
+#6 0x55bba861395c v8::internal::Builtin_Impl_ArrayReplaceIf()
+#7 0x55bba8d400ce <unknown>
+  r8: 0000000000000055  r9: 00000000000001c0 r10: 0000005635804ce9 r11: 000000000000001c
+ r12: 00007ffd816ddd40 r13: 0000005635802391 r14: 0000000035585302 r15: 00000000000003c7
+  di: 000000000000002a  si: 000018293671ccf1  bp: 00007ffd816ddd00  bx: 0000000000000000
+  dx: 000000000000002a  ax: 00000000002003ff  cx: 0000000000000056  sp: 00007ffd816ddcb0
+  ip: 000055bba89988d4 efl: 0000000000010246 cgf: 002b000000000033 erf: 0000000000000004
+ trp: 000000000000000e msk: 0000000000000000 cr2: 0000000000200406
+[end of stack trace]
+Calling _exit(1). Core file will not be generated.
+Received signal 11 SEGV_MAPERR 414141414141
+Received signal 11 SEGV_MAPERR 414141414141
+Received signal 11 SEGV_MAPERR 414141414141
