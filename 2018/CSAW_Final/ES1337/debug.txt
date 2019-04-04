@@ -1,0 +1,47 @@
+Python 2.7.15rc1 (default, Nov 12 2018, 14:31:15) 
+[GCC 7.3.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> hex(0x7fff226932b0 - 0x00007fff226962f8)
+'-0x3048'
+>>> hex(0x00007fff22691720 - 0x00007fff226962f8)
+'-0x4bd8'
+>>> hex(0x7fff22678000 - 0x00007fff226962f8)
+'-0x1e2f8'
+>>> hex(0x00007fff226962f8 - 0x7fff22695778)
+'0xb80'
+>>> hex(0x00007fff226962f8 - 0x7fff226957e8)
+'0xb10'
+>>> hex(0x00007fff226962f8 - 0x7fff226958e8)
+'0xa10'
+>>> hex(0x7fff22678000 - 0x7fff226958e80x3b9aca00)
+  File "<stdin>", line 1
+    hex(0x7fff22678000 - 0x7fff226958e80x3b9aca00)
+                                                ^
+SyntaxError: invalid syntax
+>>> 0x3b9aca00
+1000000000
+>>> hex(0x7fff22693348 - 0x00007fff226962f8)
+'-0x2fb0'
+>>> hex(0x7fff22693370 - 0x00007fff226962f8)
+'-0x2f88'
+>>> hex(0x7fff226933d8 - 0x00007fff226962f8)
+'-0x2f20'
+>>> 0x1dcd6500
+500000000
+>>> hex(0x00007ffe2a305488 - 0x7ffe2a301da8)
+'0x36e0'
+>>> hex(0x00007ffe2a305488 - 0x7ffe2a302e58)
+'0x2630'
+>>> hex(0x00007ffe2a305488 - 0x7ffe2a3023e8)
+'0x30a0'
+>>> hex(0x00007ffe2a305488 - 0x7ffe2a3023e8)
+'0x30a0'
+>>> hex(0x00007ffe2a305488 - 0x7ffe2a302440)
+'0x3048'
+>>> hex(0x00007ffe2a305488 - 0x7ffe2a302408)
+'0x3080'
+>>> hex(0x00007ffe2a305488 - 0x7ffe2a302410)
+'0x3078'
+>>> hex(0x00007ffe2a305488 - 0x7ffe2a302368)
+'0x3120'
+>>> 
